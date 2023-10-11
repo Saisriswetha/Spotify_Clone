@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
+body{
+	background-color: antiquewhite;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+nav{
+	font-family: 'Ubuntu' , sans-serif;
+
+}
+nav ul{
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	height: 65px;
+	background-color: black;
+	color: white;
+}
+nav ul li{
+	padding:0 12px;
+}
+.brand img{
+	width: 44px; 
+	padding: 0 8px;
+}
+.brand{
+	display: flex;
+	align-items: center;
+	font-weight: bolder;
+	font-size: 1.3rem;
+
+}
+.container {
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Verela Round', sans-serif;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    height: inherit;
+    background-image: url('skull21.jpg'); /* Specify the path to your background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center center; /* Center the background image */
+}
+
+.bottom{
+	position: sticky;
+	height: 130px;
+	background-color: black;
+	color:white ;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.icons{
+	margin-top: 12px;
+}
+.icons i{
+cursor: pointer;
+}
+#myprogressbar{
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+}
+.songitemcontainer{
+	margin-top: 74px;
+}
+.songitem {
+    height: 45px;
+    display: flex;
+    background-color: white;
+    width: 25%;
+    color: black;
+    margin: 10px 3px; /* Add "px" units and remove extra spaces */
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songitem img {
+    width: 13%;
+    margin: 0px 2px; /* Add "px" units and remove extra spaces */
+    border-radius: 34px;
+}
+
+.timestamp{
+	margin: 0px 25px ;
+}
+.timestamp i{
+	cursor: pointer;
+}
+.songinfo{
+	position: absolute;
+	left: 10vw;
+	font-family: 'Verela Round', sans-serif;
+}
+.songinfo img{
+	opacity: 0;
+	transition: opacity 0.4s ease-in;
+}
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: red;
+    }
+  }
